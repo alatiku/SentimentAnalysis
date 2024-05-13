@@ -2,7 +2,7 @@
 title: "Sentiment Analysis"
 subtitle: "On Amazon Fine Food Reviews Data" 
 author: "Aliyu Atiku Mustapha"
-date: "2023-08-04"
+date: "2024-04-09"
 format:
   html:
     toc: true
@@ -16,24 +16,34 @@ format:
       body-width: 1050px
       sidebar-width: 250px
       margin-width:	200px
-    include-in-header:
-      - file: github-corner.html
 editor: visual
 theme:
   light: flatly
   dark: darkly
 ---
 
-# Sentiment Analysis on Amazon Fine Food Reviews Data[^1]
+# Sentiment Analysis on Amazon Fine Food Reviews Data
 
-[^1]: Click the GitHub icon on the top right corner of the page to view all the project files including the dataset.
+The objective of this analysis is to answer 5 business questions using the Amazon Fine Food Reviews Data.
+
+1.  What is the overall sentiment distribution of the reviews?
+
+2.  How does the sentiment change over time?
+
+3.  Are there any specific products that consistently receive positive or negative reviews?
+
+4.  Do certain review lengths tend to have more positive or negative sentiment?
+
+5.  How does the sentiment differ between different user ratings (e.g., 1-star, 5-star)?
+
+## The Data
 
 The dataset consists of reviews of fine foods from amazon. The data span a period of more than 10 years, including all 568,454 reviews up to October 2012. Reviews include product and user information, ratings, and a plain text review.
 
 The dataset is available on [Kaggle](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews?resource=download). The data has the following columns and their descriptions:
 
 | Column Name            | Column Description                                                         |
-|------------------------|----------------------------------------------------------------------------|
+|------------------|------------------------------------------------------|
 | Id                     | A unique identifier for each review.                                       |
 | ProductId              | The unique identifier of the product being reviewed                        |
 | UserId                 | The unique identifier of the user who wrote the review                     |
@@ -148,17 +158,7 @@ Notice how common words like "this", "is", and punctuation are removed from the 
 
 # Sentiment Analysis
 
-The objective of this analysis is to answer 5 business questions using the Amazon Fine Food Reviews Data.
-
-1.  What is the overall sentiment distribution of the reviews?
-
-2.  How does the sentiment change over time?
-
-3.  Are there any specific products that consistently receive positive or negative reviews?
-
-4.  Do certain review lengths tend to have more positive or negative sentiment?
-
-5.  How does the sentiment differ between different user ratings (e.g., 1-star, 5-star)?
+The 5 Business questions will now be answered by examining the dataset.
 
 ### What is the overall sentiment distribution of the reviews?
 
@@ -351,3 +351,5 @@ Customers are generous with ratings when they are happy. Positive reviews will m
 3\. The data lacks categorization of products, which could be used to identify product categories with consistent high positive or negative sentiments and how that could affect sales performance.
 
 ------------------------------------------------------------------------
+
+[Link to Github](https://github.com/alatiku/SentimentAnalysis "This link will take you to the github page hosting the files for this project")
